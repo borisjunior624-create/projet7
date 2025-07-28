@@ -1,0 +1,352 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    color: #fff;
+    text-transform: capitalize;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: "poppins";
+}
+header{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(110, 72, 72, 0.3)), url(../images/3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.navbar{
+    position: fixed;
+    height: 100px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: rgba(43, 42, 42, 0.568);
+}
+.navbar a{
+    color: rgb(252, 252, 252);
+    padding: 0px 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.navbar .nav-links ul li a:focus{
+    border-bottom: 3px solid aqua;
+    border-radius: 10px;
+}
+.navbar .nav-links ul li{
+    margin-right: 100px;
+}
+ul li button{
+    padding: 7px 30px;
+    background: linear-gradient(-50deg,gray,#252525);
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+.navbar .logo{
+    font-size: 2em;
+    font-size: bold;
+}
+.navbar .nav-links{
+    display: flex;
+    align-items: center;
+}
+.navbar .nav-links ul{
+    display: flex;
+}
+.navbar .menu-hamburger{
+    position: absolute;
+    top: 50px;
+    right: 50PX;
+    width: 35px;
+    display: none;
+}
+.text-header{
+    position: absolute;
+    margin-top: 220px ;
+    margin-left: 10%;
+}
+.text-header{
+    line-height: 30px;
+    padding: 0 20px;
+}
+.text-header h1,h3{
+    font-family: 'Bell MT';
+}
+.text-header h1{
+    line-height: 45px;
+    font-size: 3em;
+}
+.text-header p{
+    line-height: 28px;
+    font-family: 'Sitka Small';
+    font-weight: bold;
+    font-style: italic;
+}
+.text-header span{
+    color: brown;
+}
+.text-header button{
+    border: none;
+    margin-top: 30px;
+    padding: 10px 60px;
+    border-radius: 11px;
+    background: rgb(63, 80, 73);
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 2em;
+    cursor: pointer;
+}
+.text-header button:hover{
+    background: transparent;
+    transition: 3s;
+    border: 3px solid #03ffff;
+}
+@media screen and ( max-width:900px) {
+    .navbar{
+        padding:0;
+        position: absolute;
+        width: 100%;
+        height: 100vh; 
+        margin: 0;
+        margin-right: 0;
+    }
+   
+    .nav-links{
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(155, 146, 146, 0.322);
+        width: 90%;
+        height: 100vh; 
+        backdrop-filter: blur(7px);
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        margin-left: -90%;
+        transition: all 0.9s ease;
+        background-size: cover;
+        padding: 0;
+        margin-right: 0;
+    }
+    .nav-links ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: none;
+    }
+    .navbar .menu-hamburger{
+        display: block;
+    }
+    .nav-links.mobile-menu{
+        margin-left: 0;
+    }
+    .navbar .nav-links ul li{
+        margin:25px 0;
+        font-size: 1.2em ;
+        background: none;
+    }
+    .navbar .logo{
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        font-size: 2em;
+        font-size: bold;
+    }  
+} 
+/* 
+*******************************
+ debut de main ****  je suis fatigué********
+******************************* */
+main h2{
+    color: #03ffff;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.main-maman{
+   background-image: url(../images2/nischal-kanishk-J1kmixRfys0-unsplash.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   height: 600px;
+}
+
+.main-maman h3{
+   text-align: center;
+   font-size: 30px;
+   color: #000000;
+   text-decoration: underline;
+   padding: 50px 10px; 
+}
+
+.main-maman section{
+    padding: 0;
+    margin: 0;
+}
+.section1 ,.section2 {
+    line-height: 60px;
+}
+.section3{
+    line-height: 60PX;
+}
+.main-maman .section1{
+    padding: 10px;
+    margin-left: 30px;
+    position: absolute;
+    font-size: 20px;
+    text-align: center;
+}
+.main-maman .section2{
+    margin-left: 500px;
+    position: absolute;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+}
+.main-maman .section3{
+    padding: 10px;
+    text-align: center;
+    margin-left: 800px;
+    font-size: 20px;
+}
+.main-maman section span{
+    color: rgb(0, 238, 255);
+}
+.christ {
+    font-size: 2em;
+    animation: 5s christ infinite;
+}
+.az{
+    animation: 5s az infinite;
+}
+@keyframes christ {
+    0%{
+        color: #03ffff;
+        transition: 5s;
+    }
+    20%{
+        transition: 5s;
+        color: rgb(0, 255, 136);
+    }
+    40%{
+        transition: 5s;
+        color: rgb(85, 219, 141);
+    }
+    70%{
+        transition: 5s;
+        color: rgb(201, 56, 99);
+    }
+    100%{
+        transition: 5s;
+        color: rgb(48, 48, 211);
+    }
+}
+@keyframes az{
+     0%{
+        transition: 5s;
+        color: #03ffff;
+    }
+    20%{
+        transition: 5s;
+        color: rgb(0, 255, 136);
+    }
+    40%{
+        transition: 5s;
+        color: rgb(85, 219, 141);
+    }
+    70%{
+        transition: 5s;
+        color: rgb(201, 56, 99);
+    }
+    100%{
+        transition: 5s; 
+        color: rgb(48, 48, 211);
+    }
+}
+
+
+.titre-main{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.gallery{
+    margin: 40px 50px;
+    margin-left: 100px;
+}
+.gallery img{
+    width: 230px;
+    height: 230px;
+    padding: 5px;
+    border-radius: 8px;
+    filter: grayscale(90%);
+    transition: 1s;
+}
+.gallery img:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+/**
+  * Gestion des popups
+  */
+
+.popupBackground {
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    background-color: #f76c5e;
+    border-radius: 30px;
+    z-index: 1;
+}
+
+
+
+.active {
+    display: flex !important;
+}
+
+.popup p {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.popup div {
+    font-size: 25px;
+    padding : 5px;
+    padding-bottom: 15px;
+}
+
+/* Eléments de formulaire */
+.popup input {
+    margin-bottom: 10px;
+}
+
+.popup button {
+    margin: 5px;
+}
